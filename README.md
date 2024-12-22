@@ -38,3 +38,68 @@ Make sure you have the following installed:
     python3 -m venv venv
     source venv/bin/activate  # For macOS/Linux
     venv\Scripts\activate     # For Windows
+
+3. Install the backend dependencies:
+    ```bash
+    pip install -r requirements.txt
+
+4. Set up MongoDB:
+
+    If you're using a local MongoDB instance, make sure it's running.
+
+    If you're using MongoDB Atlas, update the config.py file with your connection string.
+
+6. Run the Flask backend server:
+    ```bash
+    python app.py
+
+- The backend will be running on http://localhost:5000.
+
+### Frontend Setup (React)
+
+1. Install the frontend dependencies:
+    ```bash
+    npm install
+
+2. Run the React development server:
+    ```bash
+    npm start
+     
+  - The frontend will be running on http://localhost:3000.
+
+## API Endpoints
+### The backend provides the following API endpoints:
+
+- **GET /api/items:** Fetch all items from the database.
+- **POST /api/items:** Create a new item.
+- **PUT /api/items/:id:** Update an existing item.
+- **DELETE /api/items/:id:** Delete an item.
+- **GET /api/items/search?q=keyword:** Search for items based on the provided query parameter q. The search functionality uses MongoDB's text search feature to filter items by keywords.
+
+## Search Engine Feature
+The search engine allows you to filter records by a keyword. The search results are automatically updated as you type, providing a real-time search experience.
+
+- To use the search, simply type a keyword in the search input field on the homepage. The app will filter the records based on the keyword and display the matching results.
+
+#### Example of the search query:
+    ```sql
+    GET /api/items/search?q=example
+
+
+## Usage
+Once both the frontend and backend are running, navigate to http://localhost:3000 in your browser.
+
+- **Create a new item:** Use the form to add a new record.
+- **View all items:** The list of items will be displayed on the homepage.
+- **Update an item:** Click on the item to edit it.
+- **Delete an item:** Click the delete button next to the item to remove it.
+- **Search for items:** Use the search bar to filter items based on keywords.
+
+
+## Screenshots
+
+## Acknowledgments
+- Create React App for bootstrapping the React app.
+- Flask for creating the backend server.
+- MongoDB for the database.
+- MongoDB Text Search for implementing the search functionality.
