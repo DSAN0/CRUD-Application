@@ -100,6 +100,7 @@ Once both the frontend and backend are running, navigate to http://localhost:300
 ![image alt](https://github.com/DSAN0/CRUD-Application/blob/be281c038301be94f9c378eac939b0c75f297846/Screenshot%202024-12-23%20044746.png)
 ![image alt](https://github.com/DSAN0/CRUD-Application/blob/d913d13ca3b037ac951717c38e295733043d6062/Screenshot%202024-12-23%20044819.png)
 ![image alt](https://github.com/DSAN0/CRUD-Application/blob/c68f9882b4cede0ca13d2c0d03a94c2b369bdeb8/Screenshot%202024-12-23%20044954.png)
+![image alt](https://github.com/DSAN0/CRUD-Application/blob/6dc56f5a96ac600cc68861b79e2417514e688ef5/Screenshot%202024-12-23%20045014.png)
 
 ## Acknowledgments
 - Create React App for bootstrapping the React app.
